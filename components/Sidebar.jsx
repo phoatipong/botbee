@@ -14,10 +14,10 @@ function Sidebar({ signOut }) {
           objectFit="fill"
         />
       </div>
-      <div className="w-full flex mx-auto py-5">
-        <div className="w-full h-full flex  justify-end text-gray-700 text-xl font-prompt">
+      <div className="w-full flex mx-3 py-5">
+        <div className="w-full h-full flex text-gray-700 text-xl font-prompt">
           <div className=" w-11/12">
-            <div className="bg-white rounded-l-md pt-2 pb-2 ">
+            <div className="bg-white rounded-md pt-2 pb-2 ">
               <ul className="space-y-3">
                 <li className="flex border-b border-yellow-300">
                   <Link href={"/"} passHref>
@@ -31,12 +31,7 @@ function Sidebar({ signOut }) {
                     </p>
                   </Link>
                 </li>
-                <li
-                  className=""
-                  onClick={() => {
-                    signOut();
-                  }}
-                >
+                <li className="" onClick={signOut}>
                   <Link href={"#"} passHref>
                     <p className="p-1 hover:cursor-pointer">ออกจากระบบ</p>
                   </Link>

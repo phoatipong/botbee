@@ -15,16 +15,17 @@ const data = {
 
 const StatChart = ({ data }) => {
   Chart.register(ArcElement);
-  const arrData = [data.Good, data.Pollen, data.Mite, data.Enemy, data.Queen];
+  const arrData = [data.Good,data.Bad ,data.Pollen, data.Mite, data.Enemy, data.Queen];
   return (
     <Pie
       data={{
-        labels: ["Good", "Pollen", "Mite", "Enemy", "Queen"],
+        labels: ["Good","Bad", "Pollen", "Mite", "Enemy", "Queen"],
         datasets: [
           {
             data: arrData,
             backgroundColor: [
               "#22C55E",
+              "#8b5cf6",
               "#F97316",
               "#F59E0B",
               "#EF4444",
@@ -32,6 +33,7 @@ const StatChart = ({ data }) => {
             ],
             hoverBackgroundColor: [
               "#22C55E",
+              "#8b5cf6",
               "#F97316",
               "#F59E0B",
               "#EF4444",

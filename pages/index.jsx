@@ -26,7 +26,7 @@ function Home({}) {
   }, [user,route]);
 
   const signout = () => {
-    signOut(auth);
+    auth.signOut();
   };
 
   return (
@@ -39,7 +39,7 @@ function Home({}) {
             <Hearder title={"Dashbord"} />
             <div className="flex">
               <div className="w-1/2 mx-auto px-6 py-8 ">
-                <div className="flex space-x-5">
+                <div className="flex space-x-5 ">
                   <CardStat
                     title="การใช้งานทั้งหมด"
                     content={stat && stat.All}
@@ -53,6 +53,12 @@ function Home({}) {
                     title="Good"
                     content={stat && stat.Good}
                     color="bg-green-500"
+                    w="w-1/2"
+                  />
+                  <CardStat
+                    title="Bad"
+                    content={stat && stat.Bad}
+                    color="bg-violet-500"
                     w="w-1/2"
                   />
 
