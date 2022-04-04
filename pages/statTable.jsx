@@ -17,7 +17,7 @@ import {
 import { db } from "../src/plugins/firebaseConfig";
 import { getAuth, signOut } from "firebase/auth";
 
-function statTable() {
+function StatTable() {
   const [fetchData, setFetchData] = useState([]);
   const [showdata, setShowdata] = useState([]);
   const [current, setCurrent] = useState(1);
@@ -130,4 +130,4 @@ function statTable() {
   );
 }
 
-export default statTable;
+export default StatTable;
