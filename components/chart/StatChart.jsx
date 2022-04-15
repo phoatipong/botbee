@@ -2,16 +2,7 @@ import "chart.js/auto";
 import { Pie } from "react-chartjs-2";
 import { Chart, ArcElement } from "chart.js";
 
-const data = {
-  labels: ["Red", "Blue", "Yellow"],
-  datasets: [
-    {
-      data: [300, 50, 100],
-      backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
-      hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
-    },
-  ],
-};
+
 
 const StatChart = ({ data }) => {
   Chart.register(ArcElement);

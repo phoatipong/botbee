@@ -1,20 +1,12 @@
 {
   "hosting": {
     "public": "out",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  },
-  "functions": {
-    "source": ".",
-    "ignore": [
-      ".firebase/**",
-      ".firebaserc",
-      "firebase.json",
-      "**/node_modules/**",
-      "**/public/**"
+    "ignore": ["**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "destination": "/info/[slug].html", 
+        "regex": "^/info/([^/]+?)(?:/)?$"
+      }
     ]
   }
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 function Sidebar({ signOut }) {
+  
   return (
     <div className=" w-72 h-full bg-yellow-400">
       <div className="flex justify-center p-6">
@@ -27,7 +28,7 @@ function Sidebar({ signOut }) {
                 <li className="border-b border-yellow-300">
                   <Link href={"/statTable"} passHref>
                     <p className="p-1 font-prompt hover:cursor-pointer">
-                      สถิติ
+                      ประวัติการณ์วินิจฉัย
                     </p>
                   </Link>
                 </li>
