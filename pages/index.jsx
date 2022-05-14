@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import StatChart from "../components/chart/StatChart";
 import PercentBarChart from "../components/PercentBarChart";
 
+
 function Home({}) {
   const [stat, setStat] = useState();
   const [percent, setPercent] = useState({

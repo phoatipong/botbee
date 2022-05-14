@@ -32,6 +32,13 @@ function Sidebar({ signOut }) {
                     </p>
                   </Link>
                 </li>
+                <li className="border-b border-yellow-300">
+                  <Link href={"/managementInfo"} passHref>
+                    <p className="p-1 font-prompt hover:cursor-pointer">
+                      จัดการคำแนะนำ 
+                    </p>
+                  </Link>
+                </li>
                 <li className="" onClick={signOut}>
                   <Link href={"#"} passHref>
                     <p className="p-1 hover:cursor-pointer">ออกจากระบบ</p>

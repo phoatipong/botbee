@@ -6,6 +6,10 @@
       {
         "destination": "/info/[slug].html", 
         "regex": "^/info/([^/]+?)(?:/)?$"
+      },
+      {
+        "destination": "/managementInfo/[slug].html", 
+        "regex": "^/managementInfo/([^/]+?)(?:/)?$"
       }
     ]
   }
