@@ -6,7 +6,7 @@ import { db } from "../../src/plugins/firebaseConfig";
 import { getAuth, signOut } from "firebase/auth";
 import { useRouter } from "next/router";
 
-function Index({ signout }) {
+function Index({}) {
   const [allInfo, setAllInfo] = useState({});
   const route = useRouter();
   const auth = getAuth();
@@ -14,7 +14,7 @@ function Index({ signout }) {
 
   useEffect(() => {
     if (user === null) {
-      //   route.push("/login");
+      route.push("/login");
     } else {
       onValue(ref(db, "/infomation"), (snapshot) => {
         const res = snapshot.val();
@@ -23,6 +23,11 @@ function Index({ signout }) {
       });
     }
   }, [user, route]);
+
+  const signout = () => {
+    auth.signOut();
+    route.push("/login");
+  };
   return (
     <div className="flex h-scree">
       <div className="flex-1 flex flex-col overflow-hidden">

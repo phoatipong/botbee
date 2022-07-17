@@ -70,7 +70,7 @@ function Home({}) {
                     title="การใช้งานทั้งหมด"
                     content={stat && stat.All}
                     w="w-full"
-                    color="bg-yellow-500"
+                    color="bg-[#264653]"
                   />
                 </div>
 
@@ -78,13 +78,13 @@ function Home({}) {
                   <CardStat
                     title="ปกติ (Good)"
                     content={stat && stat.Good}
-                    color="bg-green-500"
+                    color="bg-[#8ab17d]"
                     w="w-1/2"
                   />
                   <CardStat
                     title="มีควันไฟ (Bad)"
                     content={stat && stat.Bad}
-                    color="bg-violet-500"
+                    color="bg-[#f4a261]"
                     w="w-1/2"
                   />
                 </div>
@@ -92,13 +92,13 @@ function Home({}) {
                   <CardStat
                     title="มีตัวไร (Mite)"
                     content={stat && stat.Mite}
-                    color="bg-amber-500"
+                    color="bg-[#287271]"
                     w="w-1/2"
                   />
                   <CardStat
                     title={"ขาดเกสร (Pollen)"}
                     content={stat && stat.Pollen}
-                    color="bg-orange-500"
+                    color="bg-[#e9c46a]"
                     w="w-1/2"
                   />
                 </div>
@@ -106,13 +106,13 @@ function Home({}) {
                   <CardStat
                     title="มีศัตรู (Enemy)"
                     content={stat && stat.Enemy}
-                    color={"bg-red-500"}
+                    color={"bg-[#e76f51]"}
                     w="w-1/2"
                   />
                   <CardStat
                     title="นางพญาหาย (Queen)"
                     content={stat && stat.Queen}
-                    color={"bg-cyan-500"}
+                    color={"bg-[#2a9d8f]"}
                     w="w-1/2"
                   />
                 </div>
@@ -121,36 +121,36 @@ function Home({}) {
                   <PercentBarChart
                     label={"ปกติ (Good)"}
                     percent={percent.good}
-                    color="bg-green-500"
+                    color="bg-[#8ab17d]"
                   />
                   <PercentBarChart
                     label={"มีควันไฟ (Bad)"}
                     percent={percent.bad}
-                    color="bg-violet-500"
+                    color="bg-[#f4a261]"
                   />
                 </div>
                 <div className="flex mt-1 space-x-1">
                   <PercentBarChart
                     label={"มีตัวไร (Mite)"}
                     percent={percent.mite}
-                    color="bg-amber-500"
+                    color="bg-[#287271]"
                   />
                   <PercentBarChart
                     label={"ขาดเกสร (Pollen)"}
                     percent={percent.pollen}
-                    color="bg-orange-500"
+                    color="bg-[#e9c46a]"
                   />
                 </div>
                 <div className="flex mt-1 space-x-1">
                   <PercentBarChart
                     label={"มีศัตรู (Enemy)"}
                     percent={percent.enemy}
-                    color="bg-red-500"
+                    color="bg-[#e76f51]"
                   />
                   <PercentBarChart
                     label={"นางพญาหาย (Queen)"}
                     percent={percent.queen}
-                    color="bg-cyan-500"
+                    color="bg-[#2a9d8f]"
                   />
                 </div>
               </div>

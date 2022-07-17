@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 import { DataSnapshot, onValue, query, ref } from "firebase/database";
 import { db } from "../../../src/plugins/firebaseConfig";
 import Image from "next/image";
+import { route } from "next/dist/server/router";
 function Info({}) {
   const [fetchData, setFetchData] = useState([]);
-
   const rounter = useRouter();
   const params = rounter.query;
 
@@ -24,6 +24,9 @@ function Info({}) {
   return (
     <>
       <div className="flex box-content p-4 h-[32px] bg-yellow-500 text-white font-prompt text-2xl">
+        <button className="mr-4" onClick={() => rounter.push("/info")}>
+          {"<"}
+        </button>
         <span>{fetchData?.title && fetchData.title}</span>
       </div>
       <div className="flex items-center justify-center mt-3">

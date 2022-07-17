@@ -87,7 +87,7 @@ function StatTable() {
                       <th>วัน-เวลา</th>
                       <th>ผู้ใช้งาน</th>
                       <th>Class</th>
-                      <th>ความแม่นยำ</th>
+                      <th>ความน่าจะเป็น</th>
                     </tr>
                   </thead>
                   <tbody className="text-center">
